@@ -1,0 +1,121 @@
+/* $bg-color: #222;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+ */
+
+
+ :root {
+  --bg-color: #222;
+  --menu-size: 6rem;
+}
+
+
+/* main{
+  width:100vw;
+  height: 100vh;
+  background-color: $bg-color;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+}
+ */
+main{
+  width:100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.btn-wrapper{
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .btn{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+ cursor: pointer;
+  transform-origin: center center;
+  .line{
+    width: 4rem;
+    height: .5em;
+    background-color: white;
+    border-radius: 5rem;
+    margin-bottom: .8rem;
+  }
+  .line:first-of-type{
+    transition: ease 1s;
+  }
+  .line:nth-child(2){
+    transition: ease 1s;
+  }
+  .line:last-of-type{
+    transition: ease 1s;
+  }
+} */
+
+.btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transform-origin: center center;
+}
+.btn .line{
+  width: 4rem;
+  height: .5em;
+  background-color: white;
+  border-radius: 5rem;
+  margin-bottom: .8rem;
+}
+.btn .line:first-of-type{
+  transition: ease 1s;
+}
+.btn .line:nth-child(2){
+  transition: ease 1s;
+}
+.btn .line:last-of-type{
+  transition: ease 1s;
+}
+/* .btn1.active{
+  .line{
+      background: red;
+    }
+  .line:first-of-type{
+    transform:matrix(0.8,-0.8,0.8,0.586,0,20);
+  }
+  .line:nth-child(2){
+    transform: translateX(-5000px);
+    visibility: hidden;
+  }
+  .line:last-of-type{
+    transform:matrix(0.8,0.8,-0.8,0.586,0,-20);
+  }
+}
+ */
+
+ .btn1.active .line {
+  background-color: white;
+}
+
+.btn1.active .line:first-of-type {
+  transform: translate(0, calc(var(--menu-size) * -0.35)) rotate(-45deg);
+}
+
+.btn1.active .line:last-of-type {
+  transform: translate(0, calc(var(--menu-size) * 0.35)) rotate(45deg);
+}
