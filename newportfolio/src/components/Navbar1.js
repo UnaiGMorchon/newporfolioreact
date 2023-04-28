@@ -2,35 +2,39 @@ import {useState, useEffect} from "react";
 //import logo from "./img/logo.jpg"
 import BurguerButton from "./BurguerButton";
 import './css/BurguerButton.css';
-import './css/Navbar.css';
+import './css/Navbar1.css';
 
 
 
 function Navbar () {
     const [clicked, setClicked] = useState(false);
     // cuando esta a true lo pasa a false y viceversa
-console.log(clicked);
-    const handleClick = () => {
-        setClicked(!clicked)
 
-    }
  
 
     return (
-        <div className="NavContainer">
+        <div className="navbar">
             <h2> Navbar <span>Responsive</span></h2>
-                <div className={`links ${clicked ? "active" : ""}`}>
-                    <a onClick={handleClick} href="#H">Home</a>
-                    <a onClick={handleClick} href="#S">Skills</a>
-                    <a onClick={handleClick} href="#A">About</a>
-                    <a onClick={handleClick} href="#M">MyWorks</a>
-                    <a onClick={handleClick} href="#C">Contact</a>
+                <div className={`nav_items ${clicked && "open"}`}>
+                    <a  href="#h">Home</a>
+                    <a  href="#h">Skills</a>
+                    <a  href="#h">About</a>
+                    <a  href="#h">Contact</a>
                 </div>
-            <div className="burguer">
+                <div className={`nav_toggle ${clicked && "open"}`} onClick={()=> setClicked(!clicked)}>
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>    
+
+
+
+            {/* <div className="burguer">
             <BurguerButton clicked={clicked} handleClick={handleClick}/>
             </div>
-            <div className={`initial ${clicked ? "active" : ""}`}>
-            </div>
+            <bgdiv className={`initial ${clicked} ? "active" : ""}`}> 
+            </bgdiv>*/}
+
         </div>
 
     )

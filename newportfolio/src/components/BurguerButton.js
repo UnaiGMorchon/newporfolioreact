@@ -4,15 +4,13 @@ import './css/BurguerButton.css';
 function BurguerButton({handleClick,clicked}){
 
     return (
-        <main> 
-        <div onClick={handleClick} className={`btn-wrapper ${clicked} ? "active" : "" `}> {/* open esta en el css opne es opacity 0*/}
-          <div className="btn1 btn">
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-          </div>
+        <div className="burguer"> 
+        <div onClick={handleClick} className={`icon nav-icon-5 ${clicked ? "open" : "" }`}> 
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        </main>
+        </div>
     )
 }
 
