@@ -7,7 +7,7 @@ import './css/MyWorks.css';
 
 const MyWorks =()=> {
 return (
-    <div>  
+    <div id="MyWorks">  
         <h1>My Works page</h1>
         <section class="o-grid js-thumbs">
             <div><img src="./img/40diasmayo.png" alt=""/></div>
@@ -21,15 +21,8 @@ return (
             <div><img src="./img/londres.png" alt=""/></div>
         </section>
         <Footer/>
-
     </div>
-
-
-
 )
-
-
-
 }
 
 export default MyWorks;

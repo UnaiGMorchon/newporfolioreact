@@ -1,5 +1,4 @@
 import {useState} from "react";
-
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -21,7 +20,7 @@ function App() {
         return <About />;
       case 'skills':
         return <Skills />;
-      case 'my-works':
+      case 'myworks':
         return <MyWorks />;
       case 'contact':
         return <Contact />;

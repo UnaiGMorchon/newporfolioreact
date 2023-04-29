@@ -22,7 +22,7 @@ console.log(clicked);
                     <a onClick={() => handleClick("carrusel")}>Home</a>
                     <a onClick={() => handleClick("skills")}>Skills</a>
                     <a onClick={() => handleClick("about")}>About</a>
-                    <a onClick={() => handleClick("myWorks")}>MyWorks</a>
+                    <a onClick={() => handleClick("myworks")}>MyWorks</a>
                     <a onClick={() => handleClick("contact")}>Contact</a>
                 </div>
             <div className="burguer">
