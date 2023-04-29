@@ -33,7 +33,7 @@ const moveDot =(index) => {
 
 
 return (
-        <div className="container-slider">
+        <div id="Carrusel" className="container-slider">
                 <img src={imageList[position]} alt="carrusel de imagenes"></img>
                 <button className="prev" onClick={next}>{"< "}</button>
                 <button className="next" onClick={prev}>{" >"}</button>

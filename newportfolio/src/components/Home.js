@@ -1,5 +1,5 @@
-import {useState, useEffect} from "react";
-
+import {useState} from "react";
+import Footer from './Footer';
 
 const Home =()=> {
 return (
@@ -9,6 +9,7 @@ return (
         <p> based in Bilbao. Bizkaia</p>
 
 
+        <Footer/>
 
     </div>
 

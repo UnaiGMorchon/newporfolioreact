@@ -1,40 +1,45 @@
+import {useState} from "react";
+
 import logo from './logo.svg';
 import './App.css';
-import Carrusel from './components/Carrusel';
-import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Skills from './components/Skills';
+import Carrusel from './components/Carrusel';
 import About from './components/About';
+import Skills from './components/Skills';
 import MyWorks from './components/MyWorks';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
-//import Slider from './components/Slider';
-import Viajes from './components/Viajes';
+
 
 function App() {
+  const [page, setPage] = useState('carrusel');
+
+  const renderPage = () => {
+    switch (page) {
+      case 'carrusel':
+        return <Carrusel />;
+      case 'about':
+        return <About />;
+      case 'skills':
+        return <Skills />;
+      case 'my-works':
+        return <MyWorks />;
+      case 'contact':
+        return <Contact />;
+      default:
+        return <Carrusel />;
+    }
+  };
+
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
-        {/* <Slider/> */}
-        <Carrusel />
-        <Home/>
-        <Skills />
-        <About />
-        <MyWorks />
-        <Contact />
-        <Footer/>
-        {/* <Viajes/> */}
+        <Navbar setPage={setPage}/>
+        {renderPage()}
       </header>
     </div>
   );
 }
 
 export default App;
-
-/* 
-<Skills title="My Skills"  id="skills"/>
-<About title="About me" id="about"/>
-<MyWorks title="My Works" id="myworks"/>
-<Contact title="Contact" id="contact"/>
-</header> */

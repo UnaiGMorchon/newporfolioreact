@@ -1,10 +1,11 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
+import Footer from './Footer';
 import './css/About.css';
 
 
 const About =()=> {
 return (
-    <div>
+    <div id="About">
         <h1>SOBRE MI</h1>
         <h3>conocéme mejor</h3>
             <section>
@@ -25,9 +26,9 @@ return (
                     <p> Bilbao </p>
                     <button> download CV <img className="iconodescarga" src="/img/descargar.png"></img> </button>
             </section>
+            <Footer />
     </div>
-)
-
+);
 }
 
 export default About;

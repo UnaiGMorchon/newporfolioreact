@@ -1,4 +1,7 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
+import './css/Footer.css';
+
+
 
 const Footer =()=> {
 return (

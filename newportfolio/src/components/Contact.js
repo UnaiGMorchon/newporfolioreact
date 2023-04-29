@@ -1,4 +1,5 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
+import Footer from './Footer';
 
 
 function Inputs() {
@@ -40,8 +41,9 @@ return (
                             {sentMessage && <p>{sentMessage}</p>}  
                     </fieldset>  
                 </form>
-
             </section>
+            <Footer/>
+
     </div>
 )
 }

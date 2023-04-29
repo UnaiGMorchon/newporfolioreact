@@ -1,4 +1,5 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
+import Footer from './Footer';
 import './css/MyWorks.css';
 
 
@@ -19,6 +20,8 @@ return (
             <div><img src="./img/vaticano.png" alt=""/></div>
             <div><img src="./img/londres.png" alt=""/></div>
         </section>
+        <Footer/>
+
     </div>
 
 
