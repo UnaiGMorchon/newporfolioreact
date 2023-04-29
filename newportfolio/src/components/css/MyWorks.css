@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background: #fafafa;
+  }
+  
+  body.is-scrolling-disabled {
+    overflow: hidden;
+  }
+  
+  .o-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 1), 1fr);
+    grid-gap: 1.5em;
+    padding: 1.5em;
+  }
+  
+  @media (min-width: 600px ) {
+    .o-grid { --cols: 2 }
+  }
+  
+  @media (min-width: 900px ) {
+    .o-grid { --cols: 3 }
+  }
+  
+  .o-grid div {
+    height: 20rem;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+  
+  .o-grid img {
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
