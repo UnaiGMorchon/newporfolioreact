@@ -1,0 +1,82 @@
+#contact-form section {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form form {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+#contact-form h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#contact-form h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact-form fieldset {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: none;
+}
+
+#contact-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+    background-color: #e6e6e6;
+}
+
+#contact-form textarea {
+    background-color: #e6e6e6;
+    resize: none;
+}
+
+#contact-form button.botonenviar {
+    padding: 10px 20px;
+    background-color: #33cccc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative
+}
+
+#contact-form button.botonenviar:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+#contact-form p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#contact-form .mensaje {
+    font-size: 50px;
+  
+}

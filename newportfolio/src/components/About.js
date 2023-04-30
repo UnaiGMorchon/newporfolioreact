@@ -6,6 +6,8 @@ import './css/About.css';
 const About =()=> {
 return (
     <div id="About">
+        <br>
+        </br>
         <h1>SOBRE MI</h1>
         <h3>conocéme mejor</h3>
             <section>

@@ -1,15 +1,14 @@
 import {useState} from "react";
-import Footer from './Footer';
+
+import './css/Home.css';
+
 
 const Home =()=> {
 return (
-    <div>
+    <div className="home">
         <h1>welcome</h1>
         <h2> El material con el que se forjan los sueños </h2>
-        <p> based in Bilbao. Bizkaia</p>
-
-
-        <Footer/>
+        <video src="/video/video.mp4" poster="/images/video-poster.jpg" type="video/mp4" autoPlay muted loop></video>
 
     </div>
 

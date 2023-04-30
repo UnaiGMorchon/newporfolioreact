@@ -1,5 +1,6 @@
 import {useState} from "react";
 import Footer from './Footer';
+import './css/Contact.css';
 
 
 function Inputs() {
@@ -25,9 +26,14 @@ const handleSubmit = (event) => {
 
 
 return (
-    <div>
+    <div id="contact-form">
+        <br>
+        </br>
+        <br>
+        </br>
         <h1>CONTACTO</h1>
         <h3>ponerse en contacto</h3>
+        {sentMessage && <p className="mensaje">{sentMessage}</p>} 
             <section>
                 <form onSubmit={handleSubmit}>
                     <fieldset>
@@ -38,7 +44,7 @@ return (
                         <label htmlFor="textarea"></label>
                             <textarea onChange={event => setTextArea(event.target.value)} name="textarea" id="textarea" autoComplete="off" value={textarea} cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
                             <button className="botonenviar" disabled={errorMessage} type="submit" >enviar</button>
-                            {sentMessage && <p>{sentMessage}</p>}  
+                             
                     </fieldset>  
                 </form>
             </section>

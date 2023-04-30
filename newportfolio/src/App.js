@@ -7,15 +7,17 @@ import About from './components/About';
 import Skills from './components/Skills';
 import MyWorks from './components/MyWorks';
 import Contact from './components/Contact';
+import Works from "./components/Works";
+import Home from "./components/Home";
 
 
 function App() {
-  const [page, setPage] = useState('carrusel');
+  const [page, setPage] = useState('home');
 
   const renderPage = () => {
     switch (page) {
-      case 'carrusel':
-        return <Carrusel />;
+      case 'home':
+        return <Home />;
       case 'about':
         return <About />;
       case 'skills':
@@ -25,7 +27,7 @@ function App() {
       case 'contact':
         return <Contact />;
       default:
-        return <Carrusel />;
+        return <Home />;
     }
   };
 
