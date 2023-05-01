@@ -3,6 +3,7 @@ import Footer from './Footer';
 import './css/MyWorks.css';
 import Modal from "./Modal";
 //import Works from "./Works";
+import RRSS from "./RRSS";
 
 
 
@@ -36,10 +37,11 @@ return (
   <br />
   <br />
   <br />
+  <RRSS/>
   <br />
   <h1>My Works</h1>
   <section className="o-grid js-thumbs">
-    <div onClick={() => handleImageClick("./img/40diasmayo.png", "40 dias", "Cortometraje del libro 40 dias de Mayo de Mikel Alvira")}>
+    <div onClick={() => handleImageClick("./img/40diasmayo.png", "Cortometraje - 40 dias de Mayo", "Cortometraje del libro 40 dias de Mayo de Mikel Alvira")}>
       <img src="./img/40diasmayo.png" alt="" />
     </div>
     <div onClick={() => handleImageClick("./img/diseño1.png", "Campaña Publicitaria", "Tu decides como te sientes (Mobiliario de Jardin)")}>
@@ -71,8 +73,8 @@ return (
   {modalOpen && (
     <Modal isOpen={true} onClose={handleModalClose}>
       <img src={selectedImage} alt="" />
-      <h2>{selectedTextTitulo}</h2>
-      <p>{selectedTextParrafo}</p>
+      <h2 className="titulocard">{selectedTextTitulo}</h2>
+      <p className="parrafocard">{selectedTextParrafo}</p>
     </Modal>
   )}
                        <br></br> 

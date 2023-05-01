@@ -1,6 +1,8 @@
 import {useState} from "react";
 import Footer from './Footer';
 import './css/About.css';
+import './css/RRSS.css';
+import RRSS from "./RRSS";
 
 
 const About =()=> {
@@ -17,8 +19,8 @@ return (
     <div >
         <br>
         </br>
-        <h1>SOBRE MI</h1>
-        <h3>conocéme mejor</h3>
+        {/* <h1>SOBRE MI</h1>
+        <h3>conocéme mejor</h3> */}
             <section id="About">
                 <section>
                 <img className="imagen" src="/img/unai-5.JPG" alt="foto de unai"></img>
@@ -43,25 +45,14 @@ return (
                         
                 </section>
             </section>
-            <br></br>
-            <br></br>
-            <br></br>
-          
-        
-
+            <div className="cuadradoazul"></div>
             <section className="datos">
-                    <img className="iconodescarga"src="./img/descargar.gif"></img>
+                    <img className="iconodescarga" src="./img/descargar.gif" alt=""/>
                     <a onClick={handleDownload} href={fileUrl} download="Unai_García_Morchon_cv.pdf"> Descargar CV </a>
                     <p> unaitxu79@gmail.com</p>
             </section>
-                     <br></br>  
-                     <br></br>  
 
-                     <br></br>  
-
-                     <br></br>  
-
-
+                     <RRSS/>
             <Footer />
     </div>
 );

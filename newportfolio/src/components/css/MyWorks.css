@@ -14,7 +14,7 @@ body {
     padding: 1.5em;
   }
   
-  @media (min-width: 600px ) {
+  @media (min-width: 768px ) {
     .o-grid { --cols: 2 }
   }
   
@@ -34,3 +34,11 @@ body {
     height: 100%;
     object-fit: cover;
   }
+
+.titulocard{
+font-size: 25px;
+}
+.parrafocard{
+  font-size: 15px;
+
+}

@@ -10,6 +10,14 @@
     align-items: center;
   }
   
+  @media screen and (max-width: 768px){
+    .modal {
+   
+  }
+  }
+
+
+
   .modal-content {
     background-color: #fff;
     padding: 1rem;

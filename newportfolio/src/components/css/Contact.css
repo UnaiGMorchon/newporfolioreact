@@ -1,11 +1,12 @@
 #contact-form section {
     display: flex;
     justify-content: center;
+
 }
 
 #contact-form form {
     max-width: 600px;
-    width: 100%;
+    width: 90%;
     padding: 30px;
     background-color: #f2f2f2;
     border-radius: 5px;
@@ -41,7 +42,7 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+   
 }
 
 #contact-form input[type="text"],
@@ -71,7 +72,6 @@
 }
 
 #contact-form p {
-    font-size: 1.2rem;
     text-align: center;
     margin-top: 10px;
 }
@@ -79,4 +79,9 @@
 #contact-form .mensaje {
     font-size: 50px;
   
+}
+@media screen and (max-width: 768px) {
+#contact-form form {
+    max-width: 250px;
+}
 }

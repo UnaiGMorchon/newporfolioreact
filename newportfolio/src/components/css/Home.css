@@ -7,11 +7,16 @@
     position: relative;
 }
   
+
+
+
+
+
 .home h1, .home h2, .home p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -150%);
     z-index: 2;
     color: white;
     text-align: center;
@@ -24,6 +29,13 @@
   .home h2 {
     font-size: 20px;
     margin-top: 60px;
+  }
+  
+  @media screen and (max-width: 768px){
+    .home h2 {
+      font-size: 13px;
+      margin-top: 72px;
+  }
   }
   
   .home p {

@@ -1,0 +1,52 @@
+.social-media {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    z-index: 9999;
+  
+  }
+  
+  .social-media a {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .social-media img:hover {
+    opacity: 1;
+  }
+  .social-media-column {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 2;
+    display: flex; /* Agregamos esta propiedad para crear una columna de iconos */
+    flex-direction: column; /* Indicamos que la columna va en dirección vertical */
+  }
+  
+  .social-media-column a {
+    display: block;
+    margin: 5px 0; /* Reducimos el margen entre los iconos */
+  }
+  
+  .social-media-column img {
+    width: 25px; /* Reducimos el tamaño de los iconos */
+    height: 25px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .social-media-column img:hover {
+    opacity: 1;
+  }
+  

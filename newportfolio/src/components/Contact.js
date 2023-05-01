@@ -2,6 +2,8 @@ import {useState} from "react";
 import Footer from './Footer';
 import './css/Contact.css';
 import './css/Footer.css';
+import './css/RRSS.css';
+import RRSS from "./RRSS";
 
 
 function Inputs() {
@@ -49,6 +51,7 @@ return (
                     </fieldset>  
                 </form>
             </section>
+            <RRSS/>
             <Footer/>
 
     </div>

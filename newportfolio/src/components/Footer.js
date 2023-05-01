@@ -9,7 +9,8 @@ return (
      <br></br>  
    <br></br>  
 
-       <p>Portfolio <img className="iconofooter"  src="./img/taza-de-cafe.gif"/> Unai Copyright © 2023 · <img className="iconofooter" src="./img/corazon.gif"/> <a href="#">Contactar</a> · <a href="#">Política de privacidad</a>  · <a href="#">Aviso legal</a></p>
+       <p>Made with <img className="iconofooter" src="./img/corazon.gif"/> & <img className="iconofooter"  src="./img/taza-de-cafe.gif"/></p>
+       <p>Copyright © 2023 · <a href="#">Aviso legal</a> . <a href="#">Política de privacidad</a> . <a href="#">Política de cookies</a></p>
        <br></br>  
        <br></br>  
 

@@ -2,31 +2,20 @@ import {useState } from "react";
 import Footer from './Footer';
 import './css/Skills.css';
 import Carrusel from "./Carrusel";
+import './css/RRSS.css';
+import RRSS from "./RRSS";
 
 
 const Skills =()=> {
 return (
-    <div>
-        <br>
-        </br>
-        <br>
-        </br>
-        <br>
-        </br>
-        <h1>Skills</h1>
+    <div id="skills">
+        <h1 className="tituloskills">Skills</h1>
         <img className="imgfondo"src="/img/fondoskills.jpg" alt=""/>
-        <br>
-        </br>
-        <br>
-        </br>
-        <br>
-        </br>
-        <br>
-        </br>
+
             <ul className="iconosskills">
                 <li>
                     <img src="/img/html.gif" alt=""/>
-                            <h1>Desarrollo Full Stack</h1>
+                            <h1 className="h1skills">Desarrollo Full Stack</h1>
                             <p>Es mi especialidad, creando aplicaciones web interactivas y escalables</p>
                 </li>
                 <li>
@@ -56,7 +45,7 @@ return (
 <h1>Titulación</h1>
 <br></br>
         <p>
-            <ul >
+            <ul className="otros">
                 <li><b>Desarrollo Web Fulls Stack</b></li>
                 <li>Gestión de <b>Marketing y Comunicación</b></li>
                 <li><b>Master en Diseño Gráfico</b></li>
@@ -69,9 +58,6 @@ return (
             </ul>
         </p>
 </div>
-<br></br>
-<br></br>
-<br></br>
 <div className="titulacion">
     <h3>Skills</h3>
     <br></br>
@@ -89,11 +75,8 @@ return (
             </ul>
         </p>
 </div>
-<br></br>  
-<br></br>  
-<br></br>  
-<br></br>  
-
+ 
+<RRSS/>
         <Footer/>
     </div>
 
