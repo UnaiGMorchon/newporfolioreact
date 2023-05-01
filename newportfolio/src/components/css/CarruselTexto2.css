@@ -1,0 +1,56 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.current-date {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.next-date {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.next-date h2{
+ font-weight: lighter;
+}
+
+.description-container {
+  text-align: center;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.prev-button,
+.next-button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  color: grey;
+}

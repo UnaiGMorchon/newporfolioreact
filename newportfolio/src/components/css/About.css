@@ -1,5 +1,75 @@
-.iconodescarga{
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-}
+#About {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .imagen {
+    width: 100%;
+    margin-right: 2rem;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .container-texto {
+    margin-top: 100px;
+    font-size: medium;
+    width: 46%;
+    margin-left: -600px;
+    z-index: 2;
+    position: relative;
+    margin-right: 36px;
+
+  }
+
+  h1, h3 {
+    text-align: center;
+    z-index: 2;
+  }
+  
+
+  
+  section {
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+  
+  button {
+    background-color: #33cccc;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  button:hover {
+    background-color: #22aaaa;
+    cursor: pointer;
+  }
+  
+  .iconodescarga {
+    width: 20px;
+    margin-left: 10px;
+  }
+  
+
+  .datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .datos p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .iconodescarga{
+    width: 10%;
+  }

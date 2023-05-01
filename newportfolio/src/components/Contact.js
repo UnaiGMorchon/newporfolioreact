@@ -1,6 +1,7 @@
 import {useState} from "react";
 import Footer from './Footer';
 import './css/Contact.css';
+import './css/Footer.css';
 
 
 function Inputs() {

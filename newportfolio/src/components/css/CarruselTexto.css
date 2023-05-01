@@ -1,0 +1,52 @@
+.carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .texto {
+    font-size: 24px;
+    margin: 0 0 16px 0;
+  }
+  
+  .botones {
+    display: flex;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+  
+  .botones button {
+    border: none;
+    background-color: white;
+    font-size: 24px;
+    margin: 0 8px;
+    cursor: pointer;
+  }
+  
+
+  .next1 {
+    position: absolute; 
+    right: 0; 
+  }
+  
+  .prev1 {
+    position: absolute; 
+    left: 0; 
+  }
+
+  .next1, .prev1 {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    margin: 0 8px;
+    outline: none;
+    cursor: pointer;
+
+  }
+  
+  .next1:hover, .prev1:hover {
+    color: #999;
+  }

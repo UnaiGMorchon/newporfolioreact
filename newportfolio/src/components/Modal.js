@@ -1,33 +1,43 @@
-/* import { useState } from "react";
+import { useState,useEffect } from "react";
 import './css/Modal.css';
 
-function Modal(props) {
-    const [isOpen, setIsOpen] = useState(props.isOpen);
-  
-    const handleClose = () => {
-      setIsOpen(false);
-      props.handleClose();
-    };
+function Modal({ isOpen, onClose, children }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+
+  useEffect(() => {
+    setIsModalOpen(isOpen);
+  }, [isOpen]);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    onClose && onClose();
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  };
+
+  const handleClick = (event) => {
+    if (event.target === event.currentTarget) {
+      closeModal();
+    }
+  };
   return (
-    <>
-      {/* Botón que abre la ventana modal 
-      <button onClick={handleOpen}>Abrir ventana modal</button>
-
-      {/* Ventana modal 
-      {isOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={handleClose}>
-              &times;
-            </span>
-            <h2>{props.title}</h2>
-            <p>{props.content}</p>
+    <div className={`modal ${isOpen ? 'open' : ''}`} onClick={handleClick} onKeyDown={handleKeyDown}>
+      <div className="modal-dialog">
+        <div className="modal-content">
+          <div className="modal-header">
+            
+            
           </div>
+          <div className="modal-body">{children}</div>
         </div>
-      )}
-    </>
+      </div>
+    </div>
   );
 }
 
-export default Modal; */
+export default Modal;

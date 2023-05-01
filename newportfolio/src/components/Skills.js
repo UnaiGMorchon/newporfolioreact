@@ -13,7 +13,12 @@ return (
         </br>
         <br>
         </br>
-        <h1>Skills page</h1>
+        <h1>Skills</h1>
+        <img className="imgfondo"src="/img/fondoskills.jpg" alt=""/>
+        <br>
+        </br>
+        <br>
+        </br>
         <br>
         </br>
         <br>
@@ -46,6 +51,49 @@ return (
         <br>
         </br>
         <Carrusel />
+
+<div className="titulacion">
+<h1>Titulación</h1>
+<br></br>
+        <p>
+            <ul >
+                <li><b>Desarrollo Web Fulls Stack</b></li>
+                <li>Gestión de <b>Marketing y Comunicación</b></li>
+                <li><b>Master en Diseño Gráfico</b></li>
+                <li><b>Community Manager</b></li>
+                <li>Técnico en <b>Realización de Audiovisuales</b> y Espectáculos</li>
+                <li>Técnico Superior en Sistemas de Regulación y Control Automáticos</li>
+                <li>Técnico Especialista en Máquinas Eléctricas</li>
+                <li><b>Técnico en Iluminación</b> en Espectáculos en Directo</li>
+                <li>Operador de Equipos de Televisión</li>
+            </ul>
+        </p>
+</div>
+<br></br>
+<br></br>
+<br></br>
+<div className="titulacion">
+    <h3>Skills</h3>
+    <br></br>
+        <p>
+            <ul className="otros">
+                <li>Suite de Adobe</li>
+                <li>HTML & CSS</li>
+                <li>AVID, Media Composer, Final Cut Pro</li>
+                <li>Apple Color</li>
+                <li>Wordpress</li>
+                <li>Hootsuite</li>
+                <li>JavaSript</li>
+                <li>Node</li>
+                <li>MERN</li>
+            </ul>
+        </p>
+</div>
+<br></br>  
+<br></br>  
+<br></br>  
+<br></br>  
+
         <Footer/>
     </div>
 

@@ -11,6 +11,7 @@
 }
 
 
+
 @media (max-width: 768px) {
   .iconosskills {
     grid-template-columns: 1fr;
@@ -20,8 +21,9 @@
 .iconosskills li {
 
     max-width: 300px;
-    margin: 0 auto;
-
+    margin: 0px auto;
+    /* border: 2px solid #33cccc; */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
     /* width: 45%;
     margin-bottom: 20px; */
 }
@@ -43,4 +45,22 @@
     margin-top: 10px;
     font-size: 16px;
     color: #555;
+}
+
+.imgfondo {
+  width: 100%; /* ajusta el ancho de la imagen */
+  height: 300px; /* ajusta la altura de la imagen */
+  object-fit: cover;
+  object-position: center;
+  /* border-top: 10px solid #33cccc; agrega una línea azul en la parte inferior */
+  border-bottom: 5px solid #33cccc; /* agrega una línea azul en la parte inferior */
+}
+
+ul.titulacion, ul.otros {
+  list-style: none;
+}
+.titulacion h1 {
+color: #33cccc;
+;
+
 }

@@ -30,17 +30,7 @@ body {
   }
   
   .o-grid img {
-    width: 75%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
-  
- /*  .animate-opacity {
-    opacity: 0.5;
-    transition: opacity 0.5s ease;
-  }
-
-  body.is-scrolling-disabled {
-    overflow: hidden;
-  } */

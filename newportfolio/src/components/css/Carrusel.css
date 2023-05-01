@@ -25,25 +25,29 @@ button{
     cursor: pointer;
 }
 
-.prev {
-    top: 50%;
-    left: 0%;
-    transform: translateY(-60%);
-}
 
 .next {
-    top: 50%;
-    left: 98%;
-    transform: translateY(-60%);
-}
+    position: absolute; 
+    right: 0; 
+  }
+  
+  .prev {
+    position: absolute; 
+    left: 0; 
+  }
 
-@media (max-width: 600px) { 
-    .prev {
-        position: relative;
-    }
-    .next {
-        position: relative;
+  .next, .prev {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    margin: 0 8px;
+    outline: none;
+    cursor: pointer;
 
-    }
-}
+  }
+  
+  .next:hover, .prev:hover {
+    color: #999;
+  }
 
