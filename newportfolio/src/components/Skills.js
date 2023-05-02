@@ -10,7 +10,7 @@ const Skills =()=> {
 return (
     <div id="skills">
         <h1 className="tituloskills">Skills</h1>
-        <img className="imgfondo"src="/img/fondoskills.jpg" alt=""/>
+        <img className="imgfondo"src="./img/fondoSkills.jpg" alt=""/>
 
             <ul className="iconosskills">
                 <li>

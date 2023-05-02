@@ -23,7 +23,7 @@ return (
         <h3>conocéme mejor</h3> */}
             <section id="About">
                 <section>
-                <img className="imagen" src="/img/unai-5.JPG" alt="foto de unai"></img>
+                <img className="imagen" src="./img/unai5.jpg" alt="foto de unai"></img>
                 </section>
                     <section className="container-texto">
                     <br></br>
@@ -54,6 +54,7 @@ return (
 
                      <RRSS/>
             <Footer />
+            
     </div>
 );
 }
