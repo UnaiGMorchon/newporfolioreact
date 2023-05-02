@@ -62,11 +62,11 @@ return (
     <div onClick={() => handleImageClick("./img/romano.png", "Fotografía", "Fotos de un cortometraje de Romanos")}>
       <img src="./img/romano.png" alt="" />
     </div>
-    <div onClick={() => handleImageClick("./img/vaticano.png", "Fotografía", "Vaticano")}>
-      <img src="./img/vaticano.png" alt="" />
+    <div onClick={() => handleImageClick("./img/petanca.png", "Backend", "Campeonato de petanca")}>
+      <img src="./img/petanca.png" alt="" />
     </div>
-    <div onClick={() => handleImageClick("./img/londres.png", "Fotografía", "London")}>
-      <img src="./img/londres.png" alt="" />
+    <div onClick={() => handleImageClick("./img/stackoverflow.png", "Backend", "BUscador Stackoverflow")}>
+      <img src="./img/stackoverflow.png" alt="" />
     </div>
   </section> 
  
